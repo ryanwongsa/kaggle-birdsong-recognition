@@ -1,0 +1,6 @@
+pytorch-ignite
+neptune-client
+audiomentations==0.11.0
+tqdm
+psutil
+SoundFile==0.10.3.post1
