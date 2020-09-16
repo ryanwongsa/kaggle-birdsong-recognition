@@ -58,5 +58,8 @@ Config files used for the file solution are available on request, as they curren
 ### References
 
 [1] [colorednoise](https://github.com/felixpatzelt/colorednoise)
+
 [2] [audioset_tagging_cnn](https://github.com/qiuqiangkong/audioset_tagging_cnn)
+
 [3] [imbalanced-dataset-sampler](https://github.com/ufoym/imbalanced-dataset-sampler)
+
