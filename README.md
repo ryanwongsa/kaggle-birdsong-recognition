@@ -66,3 +66,7 @@ Config files used for the file solution are available on request, as they curren
 [3] [imbalanced-dataset-sampler](https://github.com/ufoym/imbalanced-dataset-sampler)
 
 [4] [introduction-to-sound-event-detection](https://www.kaggle.com/hidehisaarai1213/introduction-to-sound-event-detection)
+
+[5] [Pytorch-Audio-Emotion-Recognition](https://github.com/suicao/Pytorch-Audio-Emotion-Recognition)
+
+[6] [argus-freesound](https://github.com/lRomul/argus-freesound)
