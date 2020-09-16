@@ -54,7 +54,9 @@ As Slack message notification will occur at the end of each epoch during trainin
 ### 3. Training
 
 ```cmd
-python sed_train.py --config "config_params.local_parameters"
+python sed_train.py --config "config_params.example_config"
 ```
+where `config` is the path to the `Parameter` class containing parameters for training. E.g. `config_params.example_config`.
 
-where `config` is the path to the `Parameter` class containing parameters for training. E.g. `config_params.local_parameters`
+Config files used for the file solution are available on request, as they currently contain personal neptune log details and directory structures.
+
