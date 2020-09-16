@@ -2,6 +2,8 @@
 
 1st Place solution to the Cornell Birdcall Identification competition.
 
+[WIP: Detailed summary to be included]
+
 ## Instructions
 
 ### 0. (Optional) GCP VM Setup
