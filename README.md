@@ -24,11 +24,6 @@ gcloud compute instances create $INSTANCE_NAME \
         --preemptible
 ```
 
-```cmd
-jupyter lab --ip=0.0.0.0
-htop
-```
-
 ### 1. Run on first install
 
 Requires pytorch preinstalled. Skip installation of NVIDIA apex in the config if the gpu does not support mixed precision training.
