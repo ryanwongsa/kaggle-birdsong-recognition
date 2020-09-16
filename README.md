@@ -55,3 +55,8 @@ where `config` is the path to the `Parameter` class containing parameters for tr
 
 Config files used for the file solution are available on request, as they currently contain personal neptune log details and directory structures.
 
+### References
+
+[1] [colorednoise](https://github.com/felixpatzelt/colorednoise)
+[2] [audioset_tagging_cnn](https://github.com/qiuqiangkong/audioset_tagging_cnn)
+[3] [imbalanced-dataset-sampler](https://github.com/ufoym/imbalanced-dataset-sampler)
