@@ -1,4 +1,6 @@
-# Birdsong Recognition
+# Cornell Birdcall Identification competition
+
+1st Place solution to the Cornell Birdcall Identification competition.
 
 ## Instructions
 
@@ -6,7 +8,7 @@
 
 ```cmd
 export IMAGE_FAMILY=pytorch-latest-gpu
-export INSTANCE_NAME="pytorch-instance-2"
+export INSTANCE_NAME="pytorch-instance"
 export ZONE="europe-west4-b"
 export INSTANCE_TYPE="n1-standard-8"
 
@@ -17,7 +19,7 @@ gcloud compute instances create $INSTANCE_NAME \
         --maintenance-policy=TERMINATE \
         --accelerator="type=nvidia-tesla-t4,count=1" \
         --machine-type=$INSTANCE_TYPE \
-        --boot-disk-size=100GB \
+        --boot-disk-size=300GB \
         --metadata="install-nvidia-driver=True" \
         --preemptible
 ```
@@ -34,6 +36,7 @@ Requires pytorch preinstalled. Skip installation of NVIDIA apex in the config if
 ```cmd
 . startup.sh
 ```
+NOTE: The sed training models don't support mixed precision training in the current state and will output NaN values. This can be fixed by adjusting the `amin` value but this is an untested change and may impact model performance.
 
 ### 2. Set Environment Variables
 
@@ -44,14 +47,14 @@ export NEPTUNE_API_TOKEN=<ACCESS_TOKEN>
 export SLACK_URL=<SLACK_WEBHOOK_URL>
 ```
 
-Neptune is not required, set `logger_name` in the config path to a different name and create an different logger
+Neptune is not required, set `logger_name` in the config path to a different name and create an different logger.
 
-As Slack message notification will occur at the end of each epoch during training and validation with loss and metric information.
+As Slack message notification will occur at the end of each epoch during training and validation with loss.
 
 ### 3. Training
 
 ```cmd
-python train.py --config "config_params.local_parameters"
+python sed_train.py --config "config_params.local_parameters"
 ```
 
 where `config` is the path to the `Parameter` class containing parameters for training. E.g. `config_params.local_parameters`
