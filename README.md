@@ -118,13 +118,13 @@ Config files used for the final solution are available in the `src/config_params
 
 Note: training was completed on the resampled 32kHz wav equivalent of the training data provided on Kaggle, with the same folder structure.
 
-### 4. Kaggle Solution
+## Kaggle Solution
 
 - Kaggle Kernel used to generate pink noise: https://www.kaggle.com/taggatle/noise-generator
 - Final Trained Models: https://www.kaggle.com/taggatle/birdsongdetectionfinalsubmission1
 - Kaggle Kernel which achieves 1st Place: https://www.kaggle.com/taggatle/cornell-birdcall-identification-1st-place-solution
 
-### References
+## References
 
 [1] [colorednoise](https://github.com/felixpatzelt/colorednoise)
 
