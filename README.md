@@ -104,7 +104,7 @@ export SLACK_URL=<SLACK_WEBHOOK_URL>
 
 Neptune is not required, set `logger_name` in the config path to a different name and create an different logger.
 
-As Slack message notification will occur at the end of each epoch during training and validation with loss.
+A Slack message notification will occur at the end of each epoch during training and validation with loss.
 
 ### 3. Training
 
@@ -113,7 +113,7 @@ python sed_train.py --config "config_params.example_config"
 ```
 where `config` is the path to the `Parameter` class containing parameters for training. E.g. `config_params.example_config`.
 
-Config files used for the file solution are available in the `src/config_params/final_sed` and `src/config_params/final_sed_5_fold` folder.
+Config files used for the final solution are available in the `src/config_params/final_sed` and `src/config_params/final_sed_5_fold` folder.
 
 ### References
 
