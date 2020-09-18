@@ -116,7 +116,10 @@ where `config` is the path to the `Parameter` class containing parameters for tr
 
 Config files used for the final solution are available in the `src/config_params/final_sed` and `src/config_params/final_sed_5_fold` folder.
 
-Note: training was completed on the resampled 32kHz wav equivalent of the training data provided on Kaggle, with the same folder structure.
+Note: training was completed on the resampled 32kHz wav equivalent of the training data provided on Kaggle, with the same folder structure. In order for the given configs to work the following instructions need to be followed
+- store the training data in `/data`
+- store the generated pink noise in `/pinknoise`
+- change the `project_name` in the config files to your personal neptune project name if using a neptune logger.
 
 ## Kaggle Solution
 
