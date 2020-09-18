@@ -108,12 +108,21 @@ A Slack message notification will occur at the end of each epoch during training
 
 ### 3. Training
 
+
 ```cmd
 python sed_train.py --config "config_params.example_config"
 ```
 where `config` is the path to the `Parameter` class containing parameters for training. E.g. `config_params.example_config`.
 
 Config files used for the final solution are available in the `src/config_params/final_sed` and `src/config_params/final_sed_5_fold` folder.
+
+Note: training was completed on the resampled 32kHz wav equivalent of the training data provided on Kaggle, with the same folder structure.
+
+### 4. Kaggle Solution
+
+- Kaggle Kernel used to generate pink noise: https://www.kaggle.com/taggatle/noise-generator
+- Final Trained Models: https://www.kaggle.com/taggatle/birdsongdetectionfinalsubmission1
+- Kaggle Kernel which achieves 1st Place: https://www.kaggle.com/taggatle/cornell-birdcall-identification-1st-place-solution
 
 ### References
 
