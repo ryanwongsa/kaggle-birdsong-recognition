@@ -119,6 +119,7 @@ Config files used for the final solution are available in the `src/config_params
 Note: training was completed on the resampled 32kHz wav equivalent of the training data provided on Kaggle, with the same folder structure. In order for the given configs to work the following instructions need to be followed
 - store the training data in `/data`
 - store the generated pink noise in `/pinknoise`
+- `/background/data_ssw` in the validation dataloader is data provided in the discuss [here](https://www.kaggle.com/c/birdsong-recognition/discussion/158877#911336), with 5-30 second clips extracted where no bird call was found during the extracted time. Adding this is not required.
 - change the `project_name` in the config files to your personal neptune project name if using a neptune logger.
 
 ## Kaggle Solution
