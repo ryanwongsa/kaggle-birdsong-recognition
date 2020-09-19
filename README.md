@@ -124,6 +124,7 @@ Note: training was completed on the resampled 32kHz wav equivalent of the traini
 ## Kaggle Solution
 
 - Kaggle Kernel used to generate pink noise: https://www.kaggle.com/taggatle/noise-generator
+- Example Training on Kaggle Kernel: https://www.kaggle.com/taggatle/example-training-notebook
 - Final Trained Models: https://www.kaggle.com/taggatle/birdsongdetectionfinalsubmission1
 - Kaggle Kernel which achieves 1st Place: https://www.kaggle.com/taggatle/cornell-birdcall-identification-1st-place-solution
 
